@@ -1,0 +1,426 @@
+:root {
+    --primary-color: #7A0000;   /* Royal Deep Red */
+    --accent-color: #FF7700;    /* Vibrant Gold-Orange */
+    --gold-color: #D4AF37;      /* Metallic Gold */
+    --bg-color: #FFFDF9;      /* Ultra Clean Soft Cream */
+    --card-bg: #FFFFFF;
+    --text-color: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #3d0000);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    border-bottom: 6px solid var(--accent-color);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2b0000;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-bottom: 2px solid var(--gold-color);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 3.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(122,0,0,0.3);
+}
+
+/* Gallery Grid & Cards */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border: 1px solid #fae1cd;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(122,0,0,0.15);
+}
+
+.card-img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.8rem;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 0.6rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f2f2f2;
+    padding-top: 1rem;
+}
+
+.price {
+    font-weight: 700;
+    color: #276749;
+    font-size: 1rem;
+}
+
+.details-btn {
+    background: linear-gradient(135deg, var(--accent-color), #e66a00);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.details-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Heritage Section */
+.info-section {
+    margin-top: 6rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.2rem;
+}
+
+.info-card {
+    background: white;
+    padding: 2.2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    border-left: 6px solid var(--accent-color);
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.35rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Festival Banner */
+.festival-banner {
+    background: linear-gradient(rgba(122,0,0,0.88), rgba(43,0,0,0.88)), url('https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4.5rem 2rem;
+    border-radius: 20px;
+    margin-top: 6rem;
+}
+
+.festival-banner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.festival-banner p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+}
+
+/* Review Section */
+.review-section {
+    margin-top: 6rem;
+    background: white;
+    padding: 3.5rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.review-form input, .review-form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.review-form input:focus, .review-form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #520000;
+}
+
+.review-output {
+    margin-top: 2.5rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-box {
+    background: #fff9f0;
+    padding: 1.4rem;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+/* Advanced Multi-Photo Modal Popup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    max-width: 850px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    animation: scaleUp 0.3s ease;
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content h2 {
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+
+.modal-sub {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+/* Modal Inner Photo Grid */
+.modal-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.modal-card {
+    background: #fffaf4;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #f0e1d0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.modal-card:hover {
+    transform: translateY(-5px);
+}
+
+.modal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.modal-card-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.modal-card-info h4 {
+    font-size: 1.05rem;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.modal-card-info p {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #1a1a1a;
+    color: white;
+    margin-top: 6rem;
+    font-size: 1rem;
+}

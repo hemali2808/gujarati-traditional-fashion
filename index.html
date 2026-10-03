@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrant Gujarat - Traditional Fashion & Heritage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="hero-content">
+            <h1>Vibrant Gujarat Heritage & Fashion</h1>
+            <p>Experience the Royal Textures, Mirror-Work Artistry, and Timeless Elegance</p>
+        </div>
+    </header>
+
+    <!-- Navigation / Quick Links -->
+    <nav class="navbar">
+        <a href="#gallery">Fashion Gallery</a>
+        <a href="#heritage">Textile Heritage</a>
+        <a href="#festivals">Festivals</a>
+        <a href="#reviews">Visitor Reviews</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Section 1: Fashion Gallery with Filters -->
+        <section id="gallery">
+            <h2 class="section-title">Traditional Fashion Showcase</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterGallery('all')">All Outfits</button>
+                <button class="filter-btn" onclick="filterGallery('women')">Women's Wear</button>
+                <button class="filter-btn" onclick="filterGallery('men')">Men's Wear</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <!-- Chaniya Choli Card -->
+                <div class="card" data-category="women">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Traditional Chaniya Choli</h3>
+                        <p class="card-desc">Adorned with intricate mirror-work, vibrant bandhani prints, and rich thread embroidery perfect for Navratri celebrations.</p>
+                        <div class="card-footer">
+                            <span class="price">₹4,999 onwards</span>
+                            <button class="details-btn" onclick="openOutfitGallery('chaniya')">Explore Designs</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kediyu Card -->
+                <div class="card" data-category="men">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Kutchhi Kediyu & Chorno</h3>
+                        <p class="card-desc">A classic pleated frock-style tunic paired with loose trousers, heavily embroidered with mirrors and colorful threads.</p>
+                        <div class="card-footer">
+                            <span class="price">₹3,499 onwards</span>
+                            <button class="details-btn" onclick="openOutfitGallery('kediyu')">Explore Designs</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patola Saree Card -->
+                <div class="card" data-category="women">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Patola Silk Saree</h3>
+                        <p class="card-desc">The royal pride of Patan, known worldwide for its complex double-ikat geometric weaving patterns and brilliant luster.</p>
+                        <div class="card-footer">
+                            <span class="price">₹15,000 onwards</span>
+                            <button class="details-btn" onclick="openOutfitGallery('patola')">Explore Designs</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phento & Kurta Card -->
+                <div class="card" data-category="men">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Traditional Phento & Kurta</h3>
+                        <p class="card-desc">A classic cotton ethnic kurta set complemented by a brightly colored traditional Gujarati turban (Phento) and waist jacket.</p>
+                        <div class="card-footer">
+                            <span class="price">₹2,800 onwards</span>
+                            <button class="details-btn" onclick="openOutfitGallery('phento')">Explore Designs</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 2: Rich Textile Heritage Info -->
+        <section id="heritage" class="info-section">
+            <h2 class="section-title">The Art & Craft of Gujarat</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Bandhani (Tie & Dye)</h3>
+                    <p>Originating from Jamnagar and Kutch, Bandhani involves plucking cloth into thousands of tiny bindings to create breathtaking geometric dot patterns.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Mirror Work (Abhla)</h3>
+                    <p>Traditional artisan craft from Kutch where tiny reflecting mirrors are intricately hand-stitched, sparkling dynamically under festive lights.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Block Printing</h3>
+                    <p>Ajrakh and Bagh block printing use natural vegetable dyes carved on wooden blocks, passed down through generations of master artisans.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Cultural Festivals Connection -->
+        <section id="festivals" class="festival-banner">
+            <h2>Worn During Grand Celebrations</h2>
+            <p>Gujarati traditional attire comes alive during vibrant festivals like <strong>Navratri (Garba)</strong>, <strong>Uttarayan (Kite Festival)</strong>, and grand Gujarati weddings filled with folk music and dance.</p>
+        </section>
+
+        <!-- Section 4: Interactive Review / Feedback Form -->
+        <section id="reviews" class="review-section">
+            <h2 class="section-title">Visitor Feedback</h2>
+            <form class="review-form" onclick="" onsubmit="submitReview(event)">
+                <input type="text" id="userName" placeholder="Your Full Name" required>
+                <textarea id="userComment" placeholder="Write your thoughts on Gujarati traditional fashion..." rows="4" required></textarea>
+                <button type="submit" class="submit-btn">Post Review</button>
+            </form>
+            <div id="reviewOutput" class="review-output"></div>
+        </section>
+
+    </div>
+
+    <!-- Stunning Multi-Photo Popup Modal -->
+    <div id="outfitModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalCategoryTitle">Collection Showcase</h2>
+            <p id="modalCategorySubtitle" class="modal-sub">Explore various traditional styles and patterns</p>
+            
+            <div class="modal-gallery-grid" id="modalImageContainer">
+                <!-- Dynamic Photos will load here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Gujarati Traditional Fashion WDP Project. Crafted with modern web technologies.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
