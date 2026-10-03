@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Gujrati Traditional Fashion</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <span>✦</span>
+
+            Gujrati Traditional Fashion
+
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="products.html">
+                Collection
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="header-buttons">
+
+            <button
+                onclick="searchProduct()"
+                title="Search"
+            >
+                🔍
+            </button>
+
+
+            <button
+                onclick="openWishlist()"
+                title="Wishlist"
+            >
+                ♡
+            </button>
+
+
+            <button
+                onclick="openCart()"
+                title="Cart"
+            >
+
+                🛒
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+
+        <div class="hero-text">
+
+
+            <p class="eyebrow">
+                ✦ THE ESSENCE OF GUJARAT ✦
+            </p>
+
+
+            <h1>
+
+                Tradition
+
+                <span>
+                    Meets Elegance
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Discover the timeless beauty of Gujarati
+                traditional clothing, crafted with vibrant
+                colours, rich culture and beautiful heritage.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a
+                    href="products.html"
+                    class="primary-btn"
+                >
+                    Shop Collection
+                </a>
+
+
+                <a
+                    href="categories.html"
+                    class="secondary-btn"
+                >
+                    Explore Categories
+                </a>
+
+
+            </div>
+
+
+            <div class="hero-features">
+
+
+                <div>
+
+                    <strong>
+                        100%
+                    </strong>
+
+                    <span>
+                        Traditional
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        ✦
+                    </strong>
+
+                    <span>
+                        Gujarati Heritage
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        ∞
+                    </strong>
+
+                    <span>
+                        Timeless Style
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hero-art">
+
+
+            <div class="art-circle">
+
+
+                <div class="art-inner">
+
+                    <span>
+                        ગુજરાતી
+                    </span>
+
+                    <strong>
+                        પરંપરા
+                    </strong>
+
+                    <small>
+                        CULTURE • COLOUR • CRAFT
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CATEGORY SECTION
+    ========================== -->
+
+    <section
+        class="categories"
+        id="categories"
+    >
+
+
+        <div class="section-title">
+
+
+            <p>
+                EXPLORE OUR COLLECTION
+            </p>
+
+
+            <h2>
+
+                Shop By
+                <span>
+                    Category
+                </span>
+
+            </h2>
+
+
+            <div class="gold-line"></div>
+
+
+        </div>
+
+
+
+        <div class="category-grid">
+
+
+            <!-- WOMEN -->
+
+            <div class="category-card">
+
+
+                <div
+                    class="category-image women"
+                >
+
+                    <span>
+                        👗
+                    </span>
+
+                </div>
+
+
+                <div class="category-content">
+
+
+                    <h3>
+                        Women's Wear
+                    </h3>
+
+
+                    <p>
+                        Chaniya Choli • Sarees • Bandhani
+                    </p>
+
+
+                    <a
+                        href="products.html?category=women"
+                        class="category-link"
+                    >
+                        Explore Collection →
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- MEN -->
+
+            <div class="category-card">
+
+
+                <div
+                    class="category-image men"
+                >
+
+                    <span>
+                        👔
+                    </span>
+
+                </div>
+
+
+                <div class="category-content">
+
+
+                    <h3>
+                        Men's Wear
+                    </h3>
+
+
+                    <p>
+                        Kediyu • Kurta • Dhoti
+                    </p>
+
+
+                    <a
+                        href="products.html?category=men"
+                        class="category-link"
+                    >
+                        Explore Collection →
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- KIDS -->
+
+            <div class="category-card">
+
+
+                <div
+                    class="category-image kids"
+                >
+
+                    <span>
+                        🧒
+                    </span>
+
+                </div>
+
+
+                <div class="category-content">
+
+
+                    <h3>
+                        Kids Wear
+                    </h3>
+
+
+                    <p>
+                        Traditional Outfits • Festive Wear
+                    </p>
+
+
+                    <a
+                        href="products.html?category=kids"
+                        class="category-link"
+                    >
+                        Explore Collection →
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ACCESSORIES -->
+
+            <div class="category-card">
+
+
+                <div
+                    class="category-image accessories"
+                >
+
+                    <span>
+                        💍
+                    </span>
+
+                </div>
+
+
+                <div class="category-content">
+
+
+                    <h3>
+                        Accessories
+                    </h3>
+
+
+                    <p>
+                        Jewellery • Mojdi • Dupatta
+                    </p>
+
+
+                    <a
+                        href="products.html?category=accessories"
+                        class="category-link"
+                    >
+                        Explore Collection →
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FEATURED COLLECTION
+    ========================== -->
+
+    <section
+        class="collection"
+        id="collection"
+    >
+
+
+        <div class="section-title">
+
+
+            <p>
+                HANDPICKED FOR YOU
+            </p>
+
+
+            <h2>
+
+                Featured
+                <span>
+                    Collection
+                </span>
+
+            </h2>
+
+
+            <div class="gold-line"></div>
+
+
+        </div>
+
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+
+                <div
+                    class="product-image product-one"
+                >
+
+                    <span class="product-label">
+                        NEW
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Royal Chaniya Choli')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            CHANIYA
+                        </span>
+
+                        <strong>
+                            CHOLI
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+
+                    <p class="product-category">
+                        WOMEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Royal Chaniya Choli
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+
+                        <strong>
+                            ₹2,499
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Royal Chaniya Choli', 2499)"
+                        >
+                            Add to Cart
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+
+                <div
+                    class="product-image product-two"
+                >
+
+                    <span class="product-label">
+                        TRENDING
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Traditional Bandhani Saree')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            BANDHANI
+                        </span>
+
+                        <strong>
+                            SAREE
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+
+                    <p class="product-category">
+                        WOMEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Traditional Bandhani Saree
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+
+                        <strong>
+                            ₹1,999
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Traditional Bandhani Saree', 1999)"
+                        >
+                            Add to Cart
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+
+                <div
+                    class="product-image product-three"
+                >
+
+                    <span class="product-label">
+                        POPULAR
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Gujarati Kediyu')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            GUJARATI
+                        </span>
+
+                        <strong>
+                            KEDIYU
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+
+                    <p class="product-category">
+                        MEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Traditional Gujarati Kediyu
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+
+                        <strong>
+                            ₹1,799
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Traditional Gujarati Kediyu', 1799)"
+                        >
+                            Add to Cart
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+
+                <div
+                    class="product-image product-four"
+                >
+
+                    <span class="product-label">
+                        ROYAL
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Royal Patola Saree')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            ROYAL
+                        </span>
+
+                        <strong>
+                            PATOLA
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+
+                    <p class="product-category">
+                        WOMEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Royal Patola Saree
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+
+                        <strong>
+                            ₹3,999
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Royal Patola Saree', 3999)"
+                        >
+                            Add to Cart
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         HERITAGE BANNER
+    ========================== -->
+
+    <section class="heritage-banner">
+
+
+        <div class="banner-content">
+
+
+            <p>
+                CELEBRATING THE SPIRIT OF GUJARAT
+            </p>
+
+
+            <h2>
+
+                Wear Your
+                <span>
+                    Heritage
+                </span>
+
+            </h2>
+
+
+            <div class="banner-line"></div>
+
+
+            <p class="banner-text">
+
+                From the colours of Navratri to the elegance
+                of Patola, every outfit carries a piece of Gujarat.
+
+            </p>
+
+
+            <a href="products.html">
+                Discover More
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT PREVIEW
+    ========================== -->
+
+    <section
+        class="about"
+        id="about"
+    >
+
+
+        <div class="about-symbol">
+
+
+            <div>
+                ✦
+            </div>
+
+
+            <strong>
+                GUJARATI
+            </strong>
+
+
+            <span>
+                HERITAGE
+            </span>
+
+
+        </div>
+
+
+
+        <div class="about-content">
+
+
+            <p class="eyebrow">
+                OUR STORY
+            </p>
+
+
+            <h2>
+
+                Tradition That
+                <span>
+                    Never Fades
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Gujrati Traditional Fashion is created to
+                celebrate the colourful culture, craftsmanship
+                and heritage of Gujarat.
+
+            </p>
+
+
+            <p>
+
+                From vibrant Chaniya Choli and Bandhani to
+                elegant Patola and traditional Kediyu, our
+                collection brings Gujarati fashion closer
+                to the modern generation.
+
+            </p>
+
+
+            <a
+                href="about.html"
+                class="primary-btn"
+            >
+                Learn More
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT PREVIEW
+    ========================== -->
+
+    <section
+        class="contact"
+        id="contact"
+    >
+
+
+        <div class="section-title">
+
+
+            <p>
+                WE WOULD LOVE TO HEAR FROM YOU
+            </p>
+
+
+            <h2>
+
+                Get In
+                <span>
+                    Touch
+                </span>
+
+            </h2>
+
+
+            <div class="gold-line"></div>
+
+
+        </div>
+
+
+
+        <div class="contact-container">
+
+
+            <div class="contact-info">
+
+
+                <h3>
+                    Gujrati Traditional Fashion
+                </h3>
+
+
+                <p>
+
+                    Bringing Gujarat's traditional fashion
+                    to the modern world.
+
+                </p>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        📍
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Location
+                        </strong>
+
+                        <p>
+                            Gujarat, India
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        📧
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <p>
+                            info@gujaratifashion.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        📞
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Phone
+                        </strong>
+
+                        <p>
+                            +91 98765 43210
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                onsubmit="sendMessage(event)"
+            >
+
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Message →
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <span>
+                ✦
+            </span>
+
+            Gujrati Traditional Fashion
+
+        </div>
+
+
+        <p>
+
+            © 2026 Gujrati Traditional Fashion.
+            All Rights Reserved.
+
+        </p>
+
+
+        <div class="social-icons">
+
+            <span>
+                Instagram
+            </span>
+
+            <span>
+                Facebook
+            </span>
+
+            <span>
+                WhatsApp
+            </span>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

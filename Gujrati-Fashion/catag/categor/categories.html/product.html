@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Collection | Gujrati Traditional Fashion</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            <span>✦</span>
+
+            Gujrati Traditional Fashion
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="products.html">
+                Collection
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="header-buttons">
+
+            <button
+                onclick="searchProduct()"
+                title="Search"
+            >
+                🔍
+            </button>
+
+
+            <button
+                onclick="openWishlist()"
+                title="Wishlist"
+            >
+                ♡
+            </button>
+
+
+            <button
+                onclick="openCart()"
+                title="Cart"
+            >
+
+                🛒
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         PAGE HERO
+    ========================== -->
+
+    <section class="page-hero">
+
+        <p>
+            THE GUJARATI COLLECTION
+        </p>
+
+
+        <h1>
+
+            Our
+
+            <span>
+                Collection
+            </span>
+
+        </h1>
+
+
+        <div class="gold-line"></div>
+
+
+        <p class="page-description">
+
+            Explore our collection of traditional
+            Gujarati clothing and accessories.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         PRODUCTS PAGE
+    ========================== -->
+
+    <main class="products-page">
+
+
+        <!-- =========================
+             FILTER BUTTONS
+        ========================== -->
+
+        <div class="filter-buttons">
+
+
+            <button
+                class="filter-btn active"
+                onclick="filterProducts('all', this)"
+            >
+                All
+            </button>
+
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('women', this)"
+            >
+                Women's Wear
+            </button>
+
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('men', this)"
+            >
+                Men's Wear
+            </button>
+
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('kids', this)"
+            >
+                Kids Wear
+            </button>
+
+
+            <button
+                class="filter-btn"
+                onclick="filterProducts('accessories', this)"
+            >
+                Accessories
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             PRODUCT GRID
+        ========================== -->
+
+        <div class="product-grid">
+
+
+
+            <!-- PRODUCT 1 -->
+
+            <div
+                class="product-card"
+                data-category="women"
+            >
+
+                <div class="product-image product-one">
+
+                    <span class="product-label">
+                        NEW
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Royal Chaniya Choli')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            CHANIYA
+                        </span>
+
+                        <strong>
+                            CHOLI
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        WOMEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Royal Chaniya Choli
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹2,499
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Royal Chaniya Choli', 2499)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div
+                class="product-card"
+                data-category="women"
+            >
+
+                <div class="product-image product-two">
+
+                    <span class="product-label">
+                        TRENDING
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Traditional Bandhani Saree')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            BANDHANI
+                        </span>
+
+                        <strong>
+                            SAREE
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        WOMEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Traditional Bandhani Saree
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹1,999
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Traditional Bandhani Saree', 1999)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div
+                class="product-card"
+                data-category="men"
+            >
+
+                <div class="product-image product-three">
+
+                    <span class="product-label">
+                        POPULAR
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Traditional Gujarati Kediyu')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            GUJARATI
+                        </span>
+
+                        <strong>
+                            KEDIYU
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Traditional Gujarati Kediyu
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹1,799
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Traditional Gujarati Kediyu', 1799)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <div
+                class="product-card"
+                data-category="women"
+            >
+
+                <div class="product-image product-four">
+
+                    <span class="product-label">
+                        ROYAL
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Royal Patola Saree')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            ROYAL
+                        </span>
+
+                        <strong>
+                            PATOLA
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        WOMEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Royal Patola Saree
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹3,999
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Royal Patola Saree', 3999)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 5 -->
+
+            <div
+                class="product-card"
+                data-category="men"
+            >
+
+                <div class="product-image product-five">
+
+                    <span class="product-label">
+                        FESTIVE
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Gujarati Traditional Kurta')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            TRADITIONAL
+                        </span>
+
+                        <strong>
+                            KURTA
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        MEN'S WEAR
+                    </p>
+
+
+                    <h3>
+                        Gujarati Traditional Kurta
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹1,499
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Gujarati Traditional Kurta', 1499)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 6 -->
+
+            <div
+                class="product-card"
+                data-category="kids"
+            >
+
+                <div class="product-image product-six">
+
+                    <span class="product-label">
+                        KIDS
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Kids Chaniya Choli')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            KIDS
+                        </span>
+
+                        <strong>
+                            CHOLI
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        KIDS WEAR
+                    </p>
+
+
+                    <h3>
+                        Kids Chaniya Choli
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹999
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Kids Chaniya Choli', 999)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 7 -->
+
+            <div
+                class="product-card"
+                data-category="accessories"
+            >
+
+                <div class="product-image product-seven">
+
+                    <span class="product-label">
+                        HANDCRAFTED
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Traditional Gujarati Jewellery')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            GUJARATI
+                        </span>
+
+                        <strong>
+                            JEWELLERY
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        ACCESSORIES
+                    </p>
+
+
+                    <h3>
+                        Traditional Gujarati Jewellery
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹799
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Traditional Gujarati Jewellery', 799)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCT 8 -->
+
+            <div
+                class="product-card"
+                data-category="accessories"
+            >
+
+                <div class="product-image product-eight">
+
+                    <span class="product-label">
+                        CLASSIC
+                    </span>
+
+
+                    <button
+                        class="wishlist"
+                        onclick="addWishlist('Traditional Gujarati Mojdi')"
+                    >
+                        ♡
+                    </button>
+
+
+                    <div class="product-placeholder">
+
+                        <span>
+                            GUJARATI
+                        </span>
+
+                        <strong>
+                            MOJDI
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        ACCESSORIES
+                    </p>
+
+
+                    <h3>
+                        Traditional Gujarati Mojdi
+                    </h3>
+
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            ₹699
+                        </strong>
+
+
+                        <button
+                            onclick="addToCart('Traditional Gujarati Mojdi', 699)"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <span>
+                ✦
+            </span>
+
+            Gujrati Traditional Fashion
+
+        </div>
+
+
+        <p>
+
+            © 2026 Gujrati Traditional Fashion.
+            All Rights Reserved.
+
+        </p>
+
+
+        <div class="social-icons">
+
+            <span>
+                Instagram
+            </span>
+
+            <span>
+                Facebook
+            </span>
+
+            <span>
+                WhatsApp
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
